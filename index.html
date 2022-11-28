@@ -13,12 +13,29 @@
         
                 <div class="block">
 
+                    <div class="field has-addons">
+                        <p class="control">
+                          <button class="button" data-filter="all">Show all</button>
+                        </p>
+                        <p class="control">
+                          <button class="button" data-filter="incomplete">Show incomplete</button>
+                        </p>
+                        <p class="control">
+                          <button class="button" data-filter="complete">Show complete</button>
+                        </p>
+                      </div>
+                      
+
                     <table class="table is-fullwidth">
                         <thead>
                             <tr>
                                 <th>Task</th>
-                                <th>Difficulty</th>
-                                <th>Time</th>
+                                <th>
+                                    <button class="button is-outlined" data-sort="difficulty">Difficulty</button>
+                                </th>
+                                <th>
+                                    <button class="button is-outlined" data-sort="time">Time</button>
+                                </th>
                                 <th>Completed</th>
                             </tr>
                         </thead>
