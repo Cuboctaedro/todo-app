@@ -12,8 +12,9 @@
             <div class="container">
         
                 <div class="block">
+                    <h2 class="title is-5">Task List</h2>
 
-                    <div class="field has-addons">
+                    <div class="field has-addons pb-4">
                         <p class="control">
                           <button class="button" data-filter="all">Show all</button>
                         </p>
@@ -23,7 +24,7 @@
                         <p class="control">
                           <button class="button" data-filter="complete">Show complete</button>
                         </p>
-                      </div>
+                    </div>
                       
 
                     <table class="table is-fullwidth">
@@ -84,6 +85,45 @@
 
                 </div>
 
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="block">
+                    <h2 class="title is-5">Add new Task</h2>
+
+                    <form name="add-task">
+
+                        <div class="field">
+                            <label class="label" for="field-description">Description</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Description Text" id="field-description" name="description">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label" for="field-difficulty">Difficulty</label>
+                            <div class="control">
+                                <input class="input" type="number" id="field-difficulty" name="difficulty">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label" for="field-time">Expected duration (hours)</label>
+                            <div class="control">
+                                <input class="input" type="number" id="field-time" name="time">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-link" type="submit">Save task</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </section>
   
